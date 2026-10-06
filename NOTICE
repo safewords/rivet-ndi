@@ -1,0 +1,25 @@
+rivet-ndi
+Copyright 2026 Ely Erin Fox
+
+This product is licensed under the Open Encoding Attribution License,
+Version 1.0 (see LICENSE.md). It is source-available, not open source: the
+attribution duty in §5 applies to commercial use; §4 requires this NOTICE to
+be carried forward with any distribution.
+
+------------------------------------------------------------------------------
+NDI
+------------------------------------------------------------------------------
+
+NDI® is a registered trademark of Vizrt NDI AB. This crate talks to the NDI
+runtime through hand-rolled FFI declared against the NDI SDK's public C
+headers, loading the runtime library dynamically at run time. The NDI SDK and
+runtime are proprietary to Vizrt NDI AB, are not redistributed with this
+software, and are installed by the user under NDI's own licence
+(https://ndi.video/tools/). This software is not affiliated with or endorsed
+by Vizrt.
+
+------------------------------------------------------------------------------
+Third-party crates
+------------------------------------------------------------------------------
+
+libloading (ISC) and thiserror (MIT/Apache-2.0).

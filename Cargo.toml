@@ -1,0 +1,26 @@
+[package]
+name = "rivet-ndi"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.99"
+license-file = "LICENSE.md"
+readme = "README.md"
+repository = "https://github.com/safewords/rivet-ndi"
+homepage = "https://github.com/safewords/rivet-ndi"
+documentation = "https://docs.rs/rivet-ndi"
+authors = ["Ely Erin Fox"]
+description = "NDI source discovery, receive and send in Rust, through hand-rolled FFI that loads the NDI runtime at run time: no SDK, no bindgen, no link step and no build script. Pictures out as planar YUV / RGBA, audio as float. rivet's NDI input and output. Imported as `ndi`."
+keywords = ["ndi", "video", "broadcast", "streaming", "ffi"]
+categories = ["multimedia::video", "network-programming", "api-bindings"]
+exclude = [".github/"]
+
+[lib]
+name = "ndi"
+
+[dependencies]
+thiserror = "2"
+# dlopen of the NDI runtime (`Processing.NDI.Lib.x64.dll`, `libndi.so.6`).
+libloading = "0.8"
+
+[features]
+default = []
