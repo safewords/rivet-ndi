@@ -10,8 +10,10 @@ step, no build script. A host without the runtime gets an error saying how
 to install it, not a binary that will not start.
 
 Written for the **[rivet](https://github.com/safewords/rivet)** transcoder,
-where it is the `ndi` feature: `rivet ndi record` encodes a live NDI source
-into a file and `rivet ndi send` plays a file out as one (see rivet's
+where it is the `ndi` feature: `ndi://NAME` is an input or an output
+wherever rivet takes a path — a live source recorded to files or a live HLS
+package, a file played out as an NDI stream — on the same job spec as any
+file (see rivet's
 [docs/ndi.md](https://github.com/safewords/rivet/blob/develop/docs/ndi.md)).
 Usable on its own by anything that wants NDI pictures and sound in, or out.
 
